@@ -19,7 +19,7 @@ import vm.VM;
 
 public class DemoA_Test {
 
-	
+	//----------------------------------------------------
 	private static ResultClerk resultClerk = ResultClerk.getInstance();
 	private Environment env;
 	private VM vm;
@@ -65,5 +65,5 @@ public class DemoA_Test {
 		Program p = this.demoA_Programs.getSignInOnly();
 		this.vm.execute(p);
 	}
-
-}
+	
+	
