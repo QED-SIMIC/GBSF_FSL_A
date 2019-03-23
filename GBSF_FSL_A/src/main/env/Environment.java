@@ -12,7 +12,7 @@ import util.WebDriverUtil;
 public class Environment {
 
 	private final static String CHROME_WEB_DRIVER_FILE_PATH = "C:\\Selenium\\Driver\\chromedriver.exe";
-	private final static String WORKDAY_SIGNIN_URL = "http://www.login.saleforce.com";
+	private final static String SF_SIGNIN_URL = "https://login.salesforce.com/?locale=ca";
 
 	private static Environment env = new Environment();
 
@@ -61,7 +61,7 @@ public class Environment {
 
 	// ----------------------------------------------------------------------
 	public String getSignInUrl() {
-		return WORKDAY_SIGNIN_URL;
+		return SF_SIGNIN_URL;
 	}
 
 	// --------------------------------------------------------------------

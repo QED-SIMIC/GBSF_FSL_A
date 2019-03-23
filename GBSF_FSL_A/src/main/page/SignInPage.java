@@ -31,14 +31,14 @@ public class SignInPage {
 		WebElement signInButtonWe = null;
 		
 		TimeUtil.waitSeconds(5);
-		userNameWe = this.driver.findElement(By.xpath("//*[@data-automation-id=\"userName\"]/input"));
+		userNameWe = this.driver.findElement(By.xpath("//*[@id=\"username\"]"));
 		userNameWe.clear();
 		userNameWe.sendKeys(userName);
 		
-		passwordWe = this.driver.findElement(By.xpath("//*[@data-automation-id=\"password\"]/input"));
+		passwordWe = this.driver.findElement(By.xpath("//*[@id=\"password\"]"));
 		passwordWe.sendKeys(password);
 		
-		signInButtonWe = this.driver.findElement(By.xpath("//*[@data-automation-id=\"goButton\"]"));
+		signInButtonWe = this.driver.findElement(By.xpath("//*[@id=\"Login\"]"));
 		signInButtonWe.click();
 		
 	}
